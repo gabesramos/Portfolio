@@ -13,7 +13,7 @@ As of today, Yale's IMs lack a structured organization. Colleges have to individ
 Featured on Yale and Harvard's CS50 2024 Websites: https://www.cs50.yale.edu/2024/summer/
 
 
-# Instructions and more info.:
+# Instructions and more info:
 
 ## Where to Compile?
 
