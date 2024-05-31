@@ -1,3 +1,4 @@
+Project authors: Gabriel Saavedra, Bassel Dahleh, Artur Starling
 
 # Where to Compile?
 
@@ -112,6 +113,10 @@ Same as regular user. However, there is also a small admin indicator there.
 
 Same as regular user.
 
+
+# Note:
+
+Error message screen used to show Handsome Dan along with meme text. Not working as of 5/30/24
 
 # Presentation Video
 Here is a link to a YouTube video where we give a visual presentation about the website: https://www.youtube.com/watch?v=V1kukCzO1yE
