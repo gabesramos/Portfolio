@@ -1,4 +1,4 @@
-Project authors: Gabriel Saavedra, Bassel Dahleh, Artur Starling
+# Project authors: Gabriel Saavedra, Bassel Dahleh, Artur Starling
 
 # Where to Compile?
 
