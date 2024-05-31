@@ -1,5 +1,19 @@
-# Project authors: Gabriel Saavedra, Bassel Dahleh, and Artur Starling.
-Featured on Yale CS50 Website: https://www.cs50.yale.edu/2024/summer/
+## YMViewer
+
+As of today, Yale's IMs lack a structured organization. Colleges have to individually create GroupMe chats for each sport, making communication both harder and less efficient. YMViever’s idea came to centralize and facilitate the IM organization process at Yale. It is a user-friendly website that provides a way of interacting with the Intramurals at Yale, allowing administrators to create games and users (including admins) to register for them. It also centralizes the standings system and updates it automatically, letting users to look at recent game results and the Tyng Cup standings for their residential colleges.
+
+
+# What I learned:
+
+- How to use Jinja, HTML, Python, JavaScript and SQL in harmony to create a dynamic webpage
+- Effective database management, visual web design, and logic processes to ensure functions don't interfere with one another
+
+
+* Project authors: Gabriel Saavedra, Bassel Dahleh, and Artur Starling.
+* Featured on Yale CS50 Website: https://www.cs50.yale.edu/2024/summer/
+
+
+## Instructions and more info.:
 
 # Where to Compile?
 
@@ -12,13 +26,6 @@ The website was designed to run in the cs50.dev environment. To do so, you only 
     pip3 install requests
     pip3 install flask
     pip3 install Flask-session
-
-
-# What is YMVIewer?
-
-
-As of today, Yale's IMs lack a structured organization. Colleges have to individually create GroupMe chats for each sport, making communication both harder and less efficient. YMViever’s idea came to centralize and facilitate the IM organization process at Yale. It is a website that intends to be a user-friendly way of interacting with the Intramurals at Yale. It allows administrators to create games and users (including admins) to register for them. It also centralizes the standings system and updates it automatically, making it possible for users to look at recent game results and the Tyng Cup standings.
-
 
 # Login Page:
 
