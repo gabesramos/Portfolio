@@ -1,0 +1,16 @@
+---
+:id: 219282116
+:submitters:
+- :name: Arthur Souza Starling
+  :email: arthurfelipe.souzastarling@yale.edu
+- :name: Bassel Dahleh
+  :email: bassel.dahleh@yale.edu
+- :name: Gabriel Saavedra
+  :email: gabriel.saavedra@yale.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2023-12-11 08:45:58.285512000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2023-12-11 00:45:58.285512000 Z
+:status: processed
+:score: 17.0
