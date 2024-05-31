@@ -1,9 +1,9 @@
-## YMViewer
+# YMViewer
 
 As of today, Yale's IMs lack a structured organization. Colleges have to individually create GroupMe chats for each sport, making communication both harder and less efficient. YMViever’s idea came to centralize and facilitate the IM organization process at Yale. It is a user-friendly website that provides a way of interacting with the Intramurals at Yale, allowing administrators to create games and users (including admins) to register for them. It also centralizes the standings system and updates it automatically, letting users to look at recent game results and the Tyng Cup standings for their residential colleges.
 
 
-# What I learned:
+## What I learned:
 
 - How to use Jinja, HTML, Python, JavaScript and SQL in harmony to create a dynamic webpage
 - Effective database management, visual web design, and logic processes to ensure functions don't interfere with one another
@@ -13,27 +13,27 @@ As of today, Yale's IMs lack a structured organization. Colleges have to individ
 Featured on Yale and Harvard's CS50 2024 Websites: https://www.cs50.yale.edu/2024/summer/
 
 
-## Instructions and more info.:
+# Instructions and more info.:
 
-# Where to Compile?
+## Where to Compile?
 
 The website was designed to run in the cs50.dev environment. To do so, you only have to run **flask run** in the console. The database can be seen using **phpliteadmin data.db**
 - Not too much of an issue
 
-# Libraries to Install
+## Libraries to Install
     pip3 install cs50
     pip3 install pytz
     pip3 install requests
     pip3 install flask
     pip3 install Flask-session
 
-# Login Page:
+## Login Page:
 
 
 On the login page, the user has to insert their username and password. There is also the option to **register** if you do not have an account on the website.
 
 
-# Registration Page:
+## Registration Page:
 
 
 Here, the user creates an account. The user must insert a username, create a password (that contains at least four letters, one symbol, and one number), repeat the password (to avoid typos), choose their residential college, and insert an admin code if they own one. We strongly encourage you to first create an account without an admin code, just leaving it blank. After you explore our website without an Admin Code, please create another account. This time, include the code “rescoadmin” on the Admin Code slot. You now have an Admin account. In the next few paragraphs, we will discuss the User interface, and we will then proceed to make comments about the features that are unique to the Admin interface.
