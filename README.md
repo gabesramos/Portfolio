@@ -1,4 +1,5 @@
 # Project authors: Gabriel Saavedra, Bassel Dahleh, and Artur Starling.
+Featured on Yale CS50 Website: https://www.cs50.yale.edu/2024/summer/
 
 # Where to Compile?
 
