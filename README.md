@@ -1,9 +1,10 @@
+
 # Where to Compile?
 
-
 The website was designed to run in the cs50.dev environment. To do so, you only have to run **flask run** in the console. The database can be seen using **phpliteadmin data.db**
+- Not too much of an issue
 
-# LIBRARIES TO INSTALL
+# Libraries to Install
     pip3 install cs50
     pip3 install pytz
     pip3 install requests
