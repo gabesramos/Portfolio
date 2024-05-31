@@ -9,7 +9,7 @@ As of today, Yale's IMs lack a structured organization. Colleges have to individ
 - Effective database management, visual web design, and logic processes to ensure functions don't interfere with one another
 
 
-** Project authors: Gabriel Saavedra, Bassel Dahleh, and Artur Starling. 
+** Project authors: Gabriel Saavedra, Bassel Dahleh, and Arthur Starling. 
 Featured on Yale and Harvard's CS50 2024 Websites: https://www.cs50.yale.edu/2024/summer/
 
 
