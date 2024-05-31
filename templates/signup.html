@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block main %}
+
+    <body>
+        <main class="container py-5 text-center">
+            <form action="/signup" method="post">
+                <label>
+                    {% for college in colleges %}
+                        {% if selected_game["Team1_id"] == college.id %}
+                            <div style="float: left; margin: 0; width: 50%;">
+                                <img style="width:80px" src="{{ college.image_link}}">
+                            </div>
+                        {% endif %}
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        {% if selected_game["Team2_id"] == college.id %}
+                            <div style="float: right; margin: 0; width: 50%;">
+                                <img style="width:80px" src="{{ college.image_link}}">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </label>
+                <br>
+                <h1 style="float: center;">
+                    {% for college in colleges %}
+                        {% if selected_game["Team1_id"] == college.id %}
+                            {{ college.college_name }}
+
+                        {% endif %}
+                    {% endfor %}
+                    vs.
+                    {% for college in colleges %}
+                        {% if selected_game["Team2_id"] == college.id %}
+                            {{ college.college_name }}
+                        {% endif %}
+                    {% endfor %}
+                </h1>
+                <br>
+                <label style="font-size: 16px;">Description: {{ selected_game["Desc"] }} </label>
+
+                <br>
+
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAO-nYZtCjZESHBle7txTrzrNOaWM6wkUs&q={{selected_game.Location}}">
+                </iframe>
+                <br>
+                <label style="font-size: 16px;">Location: {{ selected_game["Location"] }}</label>
+                <br>
+                <br>
+                <div style="font-size: 20px;">
+                    <label>Date and Time: {{ selected_game["Date"] }} at {{ selected_game["Tate"] }}</label>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <h4>Current Lineup:</h4>
+                    <table class="table table-striped table-hover mx-auto w-50">
+                        <tr>
+                            <td class="text-start">
+                                <ul>
+                                    {% for reg_user in all_registered %}
+
+
+                                        {% if selected_game["Team1_id"] == reg_user.college_id  %}
+
+                                            <li>{{ reg_user.username }}</li>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </ul>
+                            </td>
+
+                            <td class="text-start">
+                                <ul>
+
+                                    {% for reg_user in all_registered %}
+
+                                        {% if selected_game["Team2_id"] == reg_user.college_id  %}
+
+                                            <li>{{ reg_user.username }}</li>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <button class="btn btn-primary" type="submit">SIGN UP</button>
+            </form>
+        </main>
+    </body>
+
+{% endblock %}

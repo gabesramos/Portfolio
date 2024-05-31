@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Update Results
+{% endblock %}
+
+{% block main %}
+
+    <body>
+        <main class="container py-5 text-center">
+            <form action="/update_results" method="post">
+                <h1>
+
+                    {% for college in colleges %}
+                        {% if selected_game["Team1_id"] == college.id %}
+                            {{ college.college_name }}
+                        {% endif %}
+                    {% endfor %}
+                    vs.
+                    {% for college in colleges %}
+                        {% if selected_game["Team2_id"] == college.id %}
+                            {{ college.college_name }}
+                        {% endif %}
+                    {% endfor %}
+                </h1>
+                <br>
+                <label>Description: {{ selected_game["Desc"] }}</label>
+
+                <br>
+                <br>
+                <label>Location: {{ selected_game["Location"] }}</label>
+                <br>
+                <br>
+                <div>
+                    <label>Date and Time: {{ selected_game["Date"] }} at {{ selected_game["Time"] }}</label>
+                </div>
+                <br>
+                <div>
+                    <label>Enter Score for
+                        {% for this_game in selected_game %}
+                            {% for college in colleges %}
+                                {% if this_game.Team1_id == college.id %}
+                                    {{ college.college_name }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </label>
+                    <input type="text" placeholder="Enter a valid positive integer" name="team1_score" style="font-size: 20px;">
+                    <br>
+                    <br>
+                    <label>Enter Score for
+                        {% for this_game in selected_game %}
+                            {% for college in colleges %}
+                                {% if this_game.Team2_id == college.id %}
+                                    {{ college.college_name }}
+                                {% endif %}
+                            {% endfor %}
+                        {% endfor %}
+                    </label>
+                    <input type="text" placeholder="Enter a valid positive integer" name="team2_score" style="font-size: 20px;">
+
+                </div>
+                <br>
+                <div>
+                    <h4>Current Lineup:</h4>
+                    <table class="table table-striped table-hover mx-auto w-50">
+                        <tr>
+                            <td class="text-start">
+                                <ul>
+                                    {% for reg_user in all_registered %}
+
+
+                                        {% if selected_game["Team1_id"] == reg_user.college_id  %}
+
+                                            <li>{{ reg_user.username }}</li>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </ul>
+                            </td>
+
+                            <td class="text-start">
+                                <ul>
+
+                                    {% for reg_user in all_registered %}
+
+                                        {% if selected_game["Team2_id"] == reg_user.college_id  %}
+
+                                            <li>{{ reg_user.username }}</li>
+
+                                        {% endif %}
+
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <button class="btn btn-primary" style="background-color:#1AA36D" type="submit">UPDATE RESULTS</button>
+
+            </form>
+        </main>
+    </body>
+
+{% endblock %}
